@@ -1,0 +1,95 @@
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  
+  }
+  h1{
+    color: blueviolet;
+    position: relative;
+    left: 90px;
+  }
+  body {
+    background-color: white;
+  }
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: gainsboro;
+  }
+  button {
+    position: relative;
+    left: 90px;
+    border: 4px solid black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: gainsboro;
+     transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background: blueviolet;
+    color: gainsboro;
+  }
+
+  .play-area {
+    display: grid;
+    width: 150px;
+    height: 300px;
+    grid-template-columns: auto auto auto;
+    
+  }
+
+
+  .block {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 3px solid black;
+  
+    
+  }
+  
+  #winner {
+    position: relative;
+    left:90px;
+    color: blueviolet;
+  }
+
+
+
+  
+  #block_0,
+  #block_1,
+  #block_2 {
+    border-top: solid,
+  }
+  
+  #block_0,
+  #block_3,
+  #block_6 {
+    border-left: solid;
+  }
+  
+  #block_6,
+  #block_7,
+  #block_8 {
+    border-bottom: solid;
+  }
+  
+  #block_2,
+  #block_5,
+  #block_8 {
+    border-right: solid;
+  }
+      
